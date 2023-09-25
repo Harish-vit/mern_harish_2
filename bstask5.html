@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    .icon {
+      color: gray;
+      min-width: 25px;
+    }
+    </style>
+
+</head>
+<body style="margin:5%">
+    <div class="container mt-5" style="border: 2px solid black; width: 50%">
+        <form action="" class="was-validated">
+          <div class="mt-2 mb-3 row">
+            <label for="uid" class="form-label col-sm-3">First Name</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-user icon"></i>
+              <input type="text" class="form-control" id="uid" placeholder="First name" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Please supply your first name</div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="uid" class="form-label col-sm-3">Last Name</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-user icon"></i>
+              <input type="text" class="form-control" id="uid" placeholder="Last name" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Please supply your last name</div>
+            </div>
+          </div>
+          
+          <div class="mb-3 row">
+            <label for="Email" class="form-label col-sm-3">Email</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-envelope icon"></i>
+              <input type="email" class="form-control" id="Email" placeholder="Email" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Please supply your email address</div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="ph" class="form-label col-sm-3">Phone #</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-phone icon"></i>
+              <input type="number" class="form-control" id="ph" placeholder="Phone" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Password is required.</div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="Address" class="form-label col-sm-3">Address</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-home icon"></i>
+              <input type="text" class="form-control" id="address" placeholder="Address" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Please supply your street address</div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="city" class="form-label col-sm-3">City</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-home icon"></i>
+              <input type="text" class="form-control" id="city" placeholder="City" required>
+              <div class="valid-feedback">Valid data</div>
+              <div class="invalid-feedback">Please supply your city</div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="state" class="form-label col-sm-3">State</label>
+            <div class="col-sm-9 d-flex align-items-center">
+              <i class="fa fa-select icon"></i>
+              <select class="form-select" id="state" placeholder="State">
+                <option value="" disabled selected>Select a state</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="hosting" class="form-label col-sm-3">Do you have hosting?</label>
+            <div class="col-sm-9">
+              <input type="radio" id="yes" name="hosting" value="yes">
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="hosting" value="no">
+              <label for="no">No</label>
+            </div>
+          </div> 
+          <div class="mb-3 row">
+            <label for="hbs" class="form-label col-sm-3">Project Description</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" id="hbs" placeholder="Project Description"></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row text-center">
+            <div class="col-sm-12">
+              <input type="submit" value="Submit" style="width: 30%;color:white; background-color: rgb(198, 65, 132);">
+            </div>
+          </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train</title>
+</head>
+<body>
+    <video id="myVideo" width="530" height="370">
+        <source src="train.mp4" type="video/mp4">
+    </video>
+    <br>
+    <h1 style="font-family:cursive; color:rgb(9, 19, 77); font-size:20px;">Click the following buttons to handle animation</h1>
+    <br>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const myVideo = document.getElementById("myVideo");
+            const startButton = document.getElementById("startButton");
+            const stopButton = document.getElementById("stopButton");
+            startButton.addEventListener("click", function () {
+                myVideo.play();
+                startButton.disabled = true; 
+                stopButton.disabled = false; 
+            });
+            stopButton.addEventListener("click", function () {
+                myVideo.pause(); 
+                myVideo.currentTime = 0; 
+                startButton.disabled = false; 
+                stopButton.disabled = true; 
+            });
+            startButton.disabled = false;
+            stopButton.disabled = true;
+        });
+
+    </script>
+</body>
+</html>
